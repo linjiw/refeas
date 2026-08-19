@@ -1,0 +1,10 @@
+[project]
+name = "refeas"
+version = "0.1.0"
+description = "Dynamic-feasibility screen for retargeted humanoid motion references (contact-free inverse dynamics + torque-limited contact LP)"
+requires-python = ">=3.10"
+dependencies = ["mujoco>=3.0", "numpy", "scipy"]
+license = {text = "Apache-2.0"}
+
+[project.scripts]
+refeas-screen = "refeas.screen:main"
